@@ -1,0 +1,74 @@
+New log file opened at Wed Nov 18 09:11:57 GMT 2015 by 1008@PC-CZC530040R
+Taking next connection to: 49854
+New client attempting to connect on port: 49855-49854
+  Address = /10.50.15.5:49854
+This client on port 49855 has uuid 7d8237d4-e8de-4dbc-82e7-b17ba4dacfff configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7d8237d4-e8de-4dbc-82e7-b17ba4dacfff
+Taking next connection to: 49854
+New client attempting to connect on port: 49856-49854
+  Address = /10.50.15.5:49854
+Handshake exception on socket: 49856
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49854
+New client attempting to connect on port: 49857-49854
+  Address = /10.50.15.5:49854
+This client on port 49857 has uuid bdfa6ed6-b677-421c-8d1c-6fc430c27300 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-7d8237d4-e8de-4dbc-82e7-b17ba4dacfff, activator-bdfa6ed6-b677-421c-8d1c-6fc430c27300
+Taking next connection to: 49854
+New client attempting to connect on port: 49863-49854
+  Address = /10.50.15.5:49854
+Handshake exception on socket: 49863
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49854
+New client attempting to connect on port: 49864-49854
+  Address = /10.50.15.5:49854
+This client on port 49864 has uuid 237ab0c9-c4e6-4f91-b4f2-feb2828d3078 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-bdfa6ed6-b677-421c-8d1c-6fc430c27300, play-fork-run-237ab0c9-c4e6-4f91-b4f2-feb2828d3078
+Taking next connection to: 49854
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49854
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49854
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49854
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49854
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 1008@PC-CZC530040R logs at Wed Nov 18 09:28:56 GMT 2015, goodbye.
