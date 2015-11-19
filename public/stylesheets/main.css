@@ -1,3 +1,4 @@
+.right{float:left;}
 body { color:black; }
 body, p, label { font-size:15px; }
 .label { font-size:13px; line-height:16px; }

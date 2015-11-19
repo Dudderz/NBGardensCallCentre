@@ -10,7 +10,8 @@ class Application extends Controller {
   
   def index = Action{
     //Ok(views.html.index("Hello world"))
-    Redirect(routes.Addresses.list())
+    //Redirect(routes.Addresses.list())
+    Redirect(routes.Products.list())
   }
   
   def hello(name : String) = Action {

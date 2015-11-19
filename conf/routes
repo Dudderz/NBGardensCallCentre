@@ -6,6 +6,9 @@
 GET     /                           controllers.Application.index
 
 GET     /addresses                  controllers.Addresses.list
+GET     /products                   controllers.Products.list
+GET     /products/:ean              controllers.Products.show(ean: Long)
+GET     /barcode/:ean               controllers.Barcodes.barcode(ean: Long)
 
 
 # Map static resources from the /public folder to the /assets URL path

@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@()(implicit lang: Lang)
 
-</body>
-</html>
+@import play.api.Play.current
+
+<footer class="right">
+    lang = @lang.code,
+    user = @current.configuration.getString("environment.user"),
+    date = @(new java.util.Date().format("dd-MM-yyyy"))
+</footer>

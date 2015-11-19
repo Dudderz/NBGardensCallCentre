@@ -1,1 +1,6 @@
-application.name = Address catalog
+application.name = Product Catalogue
+ean = EAN
+name = Name
+description = Description
+
+products.details = Product: {0}
