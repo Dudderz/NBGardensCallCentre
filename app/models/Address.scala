@@ -1,21 +1,22 @@
-package model
+package models
 
 /**
   * Created by tdudley on 18/11/2015.
   */
-case class Address
-  (val houseNumber : Int, val firstLine : String, val town : String, val postcode : String) {
 
-}
+//Model class
+case class Address (houseNumber : Int, firstLine : String, town : String, postcode : String)
 
+//Data access object
 object Address {
 
-  var addresses = Set{
+  var addresses = Set(
     Address(1, "High Street", "Stoke", "ST6 5TT"),
     Address(2, "High Street", "Stoke", "ST6 5TT"),
     Address(3, "High Street", "Stoke", "ST6 5TT"),
     Address(1, "High Street", "Stoke", "ST6 5TT")
-  }
+  )
 
+  //finder function
   def findAll = addresses.toList.sortBy(_.houseNumber)
 }

@@ -1,6 +1,6 @@
 package com.tests
 
-import model.PaymentDetails
+import models.PaymentDetails
 
 /**
   * Created by tdudley on 18/11/2015.

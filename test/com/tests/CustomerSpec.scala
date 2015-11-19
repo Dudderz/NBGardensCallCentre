@@ -1,6 +1,6 @@
 package com.tests
 
-import model.{PaymentDetails, Customer, Address}
+import models.{PaymentDetails, Customer, Address}
 
 /**
   * Created by tdudley on 18/11/2015.

@@ -1,6 +1,6 @@
 package com.tests
 
-import model.Employee
+import models.Employee
 
 /**
   * Created by tdudley on 18/11/2015.

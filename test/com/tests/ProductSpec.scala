@@ -1,6 +1,6 @@
 package com.tests
 
-import model.Product
+import models.Product
 
 /**
   * Created by tdudley on 18/11/2015.

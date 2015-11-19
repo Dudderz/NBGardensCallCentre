@@ -1,7 +1,7 @@
 package controllers
 
 import play.api._
-import play.api.mvc._
+import play.api.mvc.{Action, Controller}
 
 /**
  * @author tdudley
@@ -9,12 +9,11 @@ import play.api.mvc._
 class Application extends Controller {
   
   def index = Action{
-    Ok(views.html.index("Hello world"))
+    //Ok(views.html.index("Hello world"))
+    Redirect(routes.Addresses.list())
   }
   
   def hello(name : String) = Action {
     Ok(views.html.hello(name))
   }
-
-  
 }

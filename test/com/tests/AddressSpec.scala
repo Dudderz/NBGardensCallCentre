@@ -2,7 +2,7 @@ package com.tests
 
 import org.scalatest._
 
-import model.Address
+import models.Address
 
 /**
   * Created by tdudley on 18/11/2015.
