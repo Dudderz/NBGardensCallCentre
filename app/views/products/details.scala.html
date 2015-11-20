@@ -1,7 +1,8 @@
-@(product: Product)(implicit lang: Lang)
+@(product: Product)(implicit flash: Flash, lang: Lang)
 
 @import play.api.Play.current
 @import play.api.i18n.Messages.Implicits._
+@import play.api.mvc.Flash
 
 @main(Messages("products.details", product.productName)) {
     <h2>

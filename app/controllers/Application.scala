@@ -9,8 +9,6 @@ import play.api.mvc.{Action, Controller}
 class Application extends Controller {
   
   def index = Action{
-    //Ok(views.html.index("Hello world"))
-    //Redirect(routes.Addresses.list())
     Redirect(routes.Products.list())
   }
   

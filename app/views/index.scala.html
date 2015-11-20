@@ -1,6 +1,8 @@
-@(message : String)
+@(message : String)(content: Html)(implicit flash: Flash, lang: Lang)
+
+@import play.api.mvc.Flash
 
 @main("Welcome to Play") {
-    @play20.welcome(message)
+@play20.welcome(message)
 
 }

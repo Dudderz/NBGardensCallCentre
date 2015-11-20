@@ -1,16 +1,17 @@
-@(addresses: List[Address])(implicit lang: Lang)
+@(addresses: List[Address])(implicit flash: Flash, lang: Lang)
 
 @import play.api.Play.current
 @import play.api.i18n.Messages.Implicits._
+@import play.api.mvc.Flash
 
 @main(Messages("application.name")) {
 
-    <dl class="addresses">
-        @for(address <- addresses) {
-            <dt>@address.houseNumber</dt>
-            <dd>@address.firstLine</dd>
-            <dd>@address.town</dd>
-            <dd>@address.postcode</dd>
-        }
-    </dl>
+<dl class="addresses">
+    @for(address <- addresses) {
+    <dt>@address.houseNumber</dt>
+    <dd>@address.firstLine</dd>
+    <dd>@address.town</dd>
+    <dd>@address.postcode</dd>
+    }
+</dl>
 }
